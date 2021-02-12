@@ -1,11 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 
-// const { BADHINTS } = require("dns");
-
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `https://img.shields.io/badge/license-${license}-blue.svg`
+    return `![GitHub License](https://img.shields.io/badge/License-${license}-blue.svg)`
   } else {
     return "";
   } 
@@ -15,7 +13,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) { 
   if (license !== "None") {
-    return `https://opensource.org/licenses/${license}`
+    return `For more information, visit this link: [${license} Info](https://opensource.org/licenses/${license})`
   } else {
     return "";
   } 
@@ -35,33 +33,55 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-![GitHub License](${renderLicenseBadge(data.license)})
+
+${renderLicenseBadge(data.license)}
+
   ## Description
+
   ${data.description}
+
   ## Table of Contents
+
   * [Installation](#installation)
   * [Test](#test)
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
   * [Questions](#questions)
+  
   ## Installation
+
   To install all necessary materials for this project, run the following command:
+
+  \`\`\`bash
   ${data.installation}
+\`\`\`
+
   ## Test
+
   To test this project, run the following command:
+
+  \`\`\`bash
   ${data.test}
+\`\`\`
+
   ## Usage
+
   ${data.usage}
+
   ## License
-  * ${renderLicenseSection(data.license)}
-  * For more information, visit this link: 
-  [${data.license} Info](${renderLicenseLink(data.license)})
+
+  ${renderLicenseSection(data.license)}
+
+  ${renderLicenseLink(data.license)}
+
   ## Contributing
   ${data.contribution}
+
   ## Questions
+
   If you have any questions, please reach out.
-  * GitHub: ${data.gitName}
+  * GitHub: [${data.gitName}](https://github.com/${data.gitName})
   * Email: ${data.email}
 `;
 }
