@@ -1,0 +1,22 @@
+{
+  "name": "writeyourreadme",
+  "version": "1.0.0",
+  "description": "A tool to write complete, descriptive README files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AHFotis/WriteYourREADME.git"
+  },
+  "author": "Anna Hickey Fotis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AHFotis/WriteYourREADME/issues"
+  },
+  "homepage": "https://github.com/AHFotis/WriteYourREADME#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
