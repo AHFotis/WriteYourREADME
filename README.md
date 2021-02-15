@@ -17,7 +17,11 @@
   * [Questions](#questions)
   
   ## Reference
- 
+  Sample of a generated README
+ ![SampleREADME](Reference/sampleREADME.gif)
+
+  Screenshot of a completed use.
+  ![Terminal Shot](Reference/Terminal.png)
 
   ## Installation
 
