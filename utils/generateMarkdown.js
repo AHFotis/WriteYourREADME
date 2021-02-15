@@ -12,11 +12,27 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) { 
-  if (license !== "None") {
-    return `For more information, visit this link: [${license} Info](https://opensource.org/licenses/${license})`
-  } else {
-    return "";
-  } 
+
+  let content;
+
+  switch (license) {
+    case "MIT":
+      content = `For more information, visit this link: [MIT Info](https://opensource.org/licenses/MIT)`;
+      break;
+    case "Apache2.0":
+      content = `For more information, visit this link: [Apache 2.0 Info](https://opensource.org/licenses/Apache2.0)`;
+      break;
+    case "GPL3.0":
+      content = `For more information, visit this link: [GPL-3.0 Info](https://opensource.org/licenses/GPL-3.0)`;
+      break;
+    case "BSD3Clause":
+      content = `For more information, visit this link: [BSD-3-Clause Info](https://opensource.org/licenses/BSD-3-Clause)`;
+      break;
+    default:
+      content = "";
+      break;
+  }
+  return content
 }
 
 // TODO: Create a function that returns the license section of README
