@@ -45,7 +45,7 @@ const questions = [
     {
         type: 'input',
         name: 'contribution',
-        message: "What does the user need to know about your contributing to your project?"
+        message: "What does the user need to know about contributing to your project?"
     },
     {
         type: "list",

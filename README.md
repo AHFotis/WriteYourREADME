@@ -17,11 +17,15 @@
   * [Questions](#questions)
   
   ## Reference
+
+  Click [here](https://drive.google.com/file/d/1SV9HBSmVx6q58Hfse78RVVTHPHBE1uwb/view) to view a walkthrough of the application.
+  
   Sample of a generated README
  ![SampleREADME](Reference/sampleREADME.gif)
 
   Screenshot of a completed use.
   ![Terminal Shot](Reference/Terminal.png)
+
 
   ## Installation
 
