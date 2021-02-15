@@ -53,26 +53,26 @@ const questions = [
         message: "What kind of license are you using?",
         choices: ["MIT", "GPL3.0", "Apache2.0", "BSD3Clause", "None"]
     },
-    
+
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    err ? console.log(err) : console.log('Generating README...')
-  ); 
+        err ? console.log(err) : console.log('Generating README...')
+    );
 }
 
 // TODO: Create a function to initialize app
 function init(prompts) {
     inquirer.prompt(prompts)
-    .then((answers) => {
+        .then((answers) => {
 
-        const newFile = mdFile(answers)        
-        writeToFile("newREADME.md", newFile)
-    })
-    
+            const newFile = mdFile(answers)
+            writeToFile("newREADME.md", newFile)
+        })
+
 }
 
 // Function call to initialize app
