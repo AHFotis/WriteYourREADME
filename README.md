@@ -27,20 +27,18 @@
   ![Terminal Shot](Reference/Terminal.png)
 
 
+  ## How To
+  * Open your terminal or command line and make sure you are in the Write Your README File.
+  * Type "node index" to launch the app.
+  * Answer the series of following prompts.
+  * If successful, a file titled "newREADME.md" will appear in the app folder.
+
   ## Installation
 
   To install all necessary materials for this project, run the following command:
 
   ```bash
   npm install
-```
-
-  ## Test
-
-  To test this project, run the following command:
-
-  ```bash
-  npm test
 ```
 
   ## Usage
